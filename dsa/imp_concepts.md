@@ -12,9 +12,12 @@ Convert each row into a histogram and apply “Largest Rectangle in Histogram”
 “For each row, I treat it as the base of a histogram of consecutive 1s and compute the largest rectangle using a monotonic stack.”
 ```
 
+<pre>
 Original heights: [2, 1, 1, 1, 2]
-After sentinel:   [2, 1, 1, 1, 2, 0]
-Indexes:           0  1  2  3  4  5
+After sentinel:   [2, 1, 1, 1, 2, 0]   push_back(0)
+Indexes:          0  1  2  3  4  5
+</pre>
+
 
 **Key Rules to Remember:**
 - Stack stores indices
